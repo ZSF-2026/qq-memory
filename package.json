@@ -1,0 +1,46 @@
+{
+  "name": "qq-memory",
+  "version": "0.1.0",
+  "description": "DSH 长期记忆 + 遗忘曲线插件：给 AI 加「历史记忆 / 回顾上下文」能力，用艾宾浩斯遗忘曲线让旧记忆自然淡出、节约 token",
+  "type": "module",
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "author": "ZSF-2026",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "memory",
+    "ebbinghaus",
+    "forgetting-curve",
+    "spaced-repetition",
+    "long-term-memory",
+    "记忆",
+    "遗忘曲线"
+  ],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZSF-2026/qq-memory.git"
+  },
+  "homepage": "https://github.com/ZSF-2026/qq-memory#readme",
+  "bugs": {
+    "url": "https://github.com/ZSF-2026/qq-memory/issues"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "@deepseek-ai/schemastery": "^3.18.1"
+  }
+}

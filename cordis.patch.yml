@@ -1,0 +1,7 @@
+# qq-memory 插件的 cordis entry。
+# id 必须等于插件的 settings 命名空间名（= 包名 qq-memory），这样 Config 里的
+# volatile 字段才能在 DSH 设置面板里被读写（与 qq-mode-console 同机制）。
+- insert:
+    - id: qq-memory
+      name: qq-memory
+      config: {}
